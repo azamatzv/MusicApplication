@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26C300B8-B0BE-4E6E-A74F-D8A49CB8F58D}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{05B8629C-E9E6-47D5-851F-EF21F073E122}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{55B6C1E1-9158-4112-8DB0-80B1B44C73C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2DA531BF-0EC7-414B-93CA-70A84FCEE1D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{7792953E-8FE6-4947-99E3-57F82A69BC63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +39,10 @@ Global
 		{55B6C1E1-9158-4112-8DB0-80B1B44C73C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B6C1E1-9158-4112-8DB0-80B1B44C73C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B6C1E1-9158-4112-8DB0-80B1B44C73C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7792953E-8FE6-4947-99E3-57F82A69BC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7792953E-8FE6-4947-99E3-57F82A69BC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7792953E-8FE6-4947-99E3-57F82A69BC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7792953E-8FE6-4947-99E3-57F82A69BC63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +52,6 @@ Global
 		{67B917F6-65CA-4AE4-8BB6-B892BD6F4429} = {26C300B8-B0BE-4E6E-A74F-D8A49CB8F58D}
 		{05B8629C-E9E6-47D5-851F-EF21F073E122} = {26C300B8-B0BE-4E6E-A74F-D8A49CB8F58D}
 		{55B6C1E1-9158-4112-8DB0-80B1B44C73C2} = {26C300B8-B0BE-4E6E-A74F-D8A49CB8F58D}
+		{7792953E-8FE6-4947-99E3-57F82A69BC63} = {2DA531BF-0EC7-414B-93CA-70A84FCEE1D9}
 	EndGlobalSection
 EndGlobal
