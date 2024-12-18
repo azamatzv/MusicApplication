@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.2.8" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
   </ItemGroup>
@@ -18,9 +19,17 @@
 
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="MappingProfiles\" />
+    <Folder Include="Models\AccountsFile\" />
+    <Folder Include="Models\AuthorsFile\" />
+    <Folder Include="Models\CardsFile\" />
+    <Folder Include="Models\CardTypesFile\" />
+    <Folder Include="Models\DownloadsFile\" />
+    <Folder Include="Models\FavouriteFile\" />
+    <Folder Include="Models\GenreFile\" />
+    <Folder Include="Models\MusicFile\" />
+    <Folder Include="Models\UsersFile\" />
+    <Folder Include="Models\TariffTypeFile\" />
+    <Folder Include="Models\PaymentFile\" />
     <Folder Include="Services\DevImpl\" />
     <Folder Include="Services\Impl\" />
     <Folder Include="Services\Interfaces\" />
