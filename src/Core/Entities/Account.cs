@@ -12,7 +12,7 @@ public class Account : BaseEntity, IAuditedEntity
 
     public int Balance { get; set; }
 
-    public User User { get; set; }
+    public Users User { get; set; }
     
     public Guid UserId { get; set; }
 

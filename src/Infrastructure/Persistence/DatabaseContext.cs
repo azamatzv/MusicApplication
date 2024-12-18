@@ -30,7 +30,7 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
     public DbSet<Music> Musics { get; set; }
     public DbSet<Payment> Payments { get; set; }
     public DbSet<TariffType> TariffTypes { get; set; }
-    public DbSet<User> Usering { get; set; }
+    public DbSet<Users> Usering { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder builder)

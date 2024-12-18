@@ -2,7 +2,7 @@
 
 namespace Core.Entities;
 
-public class User : BaseEntity, IAuditedEntity
+public class Users : BaseEntity, IAuditedEntity
 {
     public required string Name { get; set; }
 

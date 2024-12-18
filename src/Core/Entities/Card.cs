@@ -4,7 +4,7 @@ namespace Core.Entities;
 
 public class Card : BaseEntity, IAuditedEntity
 {
-    public User User { get; set; }
+    public Users User { get; set; }
     public Guid UserId { get; set; }
 
     public required int CardNumber { get; set; }
