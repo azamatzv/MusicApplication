@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Shared.Services.Impl;
 using Core.Common;
+using Core.Entities;
 
 namespace Infrastructure.Persistence;
 
@@ -19,7 +20,18 @@ public class DatabaseContext : IdentityDbContext<ApplicationUser>
         AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
     }
 
-    //DbSets
+    public DbSet<Account> Accounts { get; set; }
+    public DbSet<Author> Authors { get; set; }
+    public DbSet<Card> Cards { get; set; }
+    public DbSet<CardType> CardTypes { get; set; }
+    public DbSet<Downloads> Downloadses { get; set; }
+    public DbSet<Favourite> Favourites { get; set; }
+    public DbSet<Genre> Genres { get; set; }
+    public DbSet<Music> Musics { get; set; }
+    public DbSet<Payment> Payments { get; set; }
+    public DbSet<TariffType> TariffTypes { get; set; }
+    public DbSet<User> Usering { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
