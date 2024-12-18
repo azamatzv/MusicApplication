@@ -1,10 +1,13 @@
 ﻿using Infrastructure.Identity;
 using Infrastructure.Persistence;
+using Infrastructure.Repositories;
+using Infrastructure.Repositories.Impl;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+
 namespace Infrastructure;
 
 public static class InfrastructureDependencyInjection
@@ -17,12 +20,23 @@ public static class InfrastructureDependencyInjection
 
         services.AddRepositories();
 
+
         return services;
     }
 
     private static void AddRepositories(this IServiceCollection services)
     {
-
+        services.AddScoped<IAccountRepository, AccountRepository>();
+        services.AddScoped<IAuthorRepository, AuthorRepository>();
+        services.AddScoped<ICardRepository, CardRepository>();
+        services.AddScoped<ICardTypeRepository, CardTypeRepository>();
+        services.AddScoped<IDownloadsRepository, DownloadsRepository>();
+        services.AddScoped<IFavouriteRepository, FavouriteRepository>();
+        services.AddScoped<IGenreRepository, GenreRepository>();
+        services.AddScoped<IMusicRepository, MusicRepository>();
+        services.AddScoped<IPaymentRepository, PaymentRepository>();
+        services.AddScoped<ITariffTypeRepository, TariffTypeRepository>();
+        services.AddScoped<IUsersRepository, UsersRepository>();
     }
 
     private static void AddDatabase(this IServiceCollection services, IConfiguration configuration)

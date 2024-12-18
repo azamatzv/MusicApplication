@@ -1,6 +1,5 @@
 ﻿using Core.Entities;
-using Infrastructure.Repositories;
 
-namespace Infrastructure.Persistence;
+namespace Infrastructure.Repositories;
 
 public interface IPaymentRepository : IBaseRepository<Payment> { }
