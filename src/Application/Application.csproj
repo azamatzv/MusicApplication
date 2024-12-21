@@ -14,25 +14,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\tests\Shared\Shared.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Common\" />
-    <Folder Include="Models\AccountsFile\" />
-    <Folder Include="Models\AuthorsFile\" />
-    <Folder Include="Models\CardsFile\" />
-    <Folder Include="Models\CardTypesFile\" />
-    <Folder Include="Models\DownloadsFile\" />
-    <Folder Include="Models\FavouriteFile\" />
-    <Folder Include="Models\GenreFile\" />
-    <Folder Include="Models\MusicFile\" />
-    <Folder Include="Models\UsersFile\" />
-    <Folder Include="Models\TariffTypeFile\" />
-    <Folder Include="Models\PaymentFile\" />
+    <Folder Include="Models\Authors\" />
+    <Folder Include="Models\Cards\" />
+    <Folder Include="Models\CardTypes\" />
+    <Folder Include="Models\Downloads\" />
+    <Folder Include="Models\Favourite\" />
+    <Folder Include="Models\Genre\" />
+    <Folder Include="Models\Music\" />
+    <Folder Include="Models\Payment\" />
     <Folder Include="Services\DevImpl\" />
-    <Folder Include="Services\Impl\" />
-    <Folder Include="Services\Interfaces\" />
   </ItemGroup>
 
 </Project>
